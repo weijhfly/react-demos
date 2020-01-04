@@ -7,7 +7,13 @@ class Todolist extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { placeholder: "add todo"};
+  }
+
+  componentDidMount() {
+    setTimeout(() =>{
+      this.setState({ placeholder: "Welcome to todolist"});
+    },15e2)
   }
 
   UNSAFE_componentWillUpdate() {
@@ -29,10 +35,9 @@ class Todolist extends React.Component {
     return (
       <div className="Todolist">
         <Search
-          placeholder="add todo"
+          placeholder={this.state.placeholder}
           enterButton="add"
           size="large"
-          style={{ width: 500 }}
           onSearch={value => { this.onAdd(value) }}
         />
 

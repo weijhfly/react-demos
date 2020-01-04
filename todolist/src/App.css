@@ -25,7 +25,14 @@
   background: rgba(16, 142, 233, 1);
   color: #fff;
 }
-
+.Todolist{
+  width: 500px;
+}
+@media(max-width: 768px){
+  .Todolist{
+    width: 75%;
+  }
+}
 .Todolist ul{
   padding: 0;
   margin-top: 20px;
