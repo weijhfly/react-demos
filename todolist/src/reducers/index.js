@@ -4,7 +4,6 @@ export default (state = tks.storage().get('todolist') || ['item1', 'item2'], act
   //console.log(state, action)
   switch (action.type) {
     case 'ADD':
-
       state.push(action.value);
       tks.storage().set('todolist', state);
       return state;

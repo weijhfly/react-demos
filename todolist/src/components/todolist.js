@@ -22,11 +22,11 @@ class Todolist extends React.Component {
 
   onAdd(value) {
     if(value)
-    this.props.onAdd.bind(this, value)();
+    this.props.onAdd(value);
   }
 
   onDelete(index) {
-    this.props.onDelete.bind(this, index)();
+    this.props.onDelete(index);
   }
 
   render() {
@@ -38,12 +38,12 @@ class Todolist extends React.Component {
           placeholder={this.state.placeholder}
           enterButton="add"
           size="large"
-          onSearch={value => { this.onAdd(value) }}
+          onSearch={value => self.onAdd(value)}
         />
 
         <ul>
           {
-            this.props.todolist.map(function (item, i) {
+            self.props.todolist.map(function (item, i) {
               return <li key = { i }>
                 <span>{item}</span>
                 <Button type="default" onClick={ self.onDelete.bind(self, i) }>delete</Button>

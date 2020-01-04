@@ -14,8 +14,8 @@ const render = () => ReactDOM.render(<App todolist = { store.getState() }
     onDelete={(value) => store.dispatch({ type: 'DELETE' ,value: value})}
 />, document.getElementById('root'));
 
-render()
-store.subscribe(render)
+render();
+store.subscribe(render);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
