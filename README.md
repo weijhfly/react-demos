@@ -3,7 +3,7 @@
 
 ## todolist
 
-一个使用react全家桶做的todolist实例，包括react、react-router、redux、redux、antd
+一个使用react全家桶做的todolist实例，包括react、react-router、redux、antd
 ### 运行
 ```javascript
 npm start
