@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+.App .ant-layout{
+  height: 100vh;
+}
+.App .ant-layout-header,
+.App .ant-layout-footer {
+  background: #7dbcea;
+  color: #fff;
+}
+.App .ant-layout-footer {
+  line-height: 1.5;
+}
+.App .ant-layout-sider {
+  background: #3ba0e9;
+  color: #fff;
+  line-height: 120px;
+}
+.App .ant-layout-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background: rgba(16, 142, 233, 1);
+  color: #fff;
+}
+
+.Todolist ul{
+  padding: 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+}
+.Todolist li{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  line-height: 45px;
+  align-items: center;
+  padding: 0 10px;
+  border-bottom: 1px solid #eee;
+}
+.Todolist li:last-child{
+  border: none;
+}
